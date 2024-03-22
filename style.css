@@ -6,35 +6,34 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    background-color: lightgray;
+    background-color: #9c7e00;
 }
 
 a {
     padding: 1px 3px;
-    color: darkslategray;
+    color: #ffa700;
     text-decoration-style: dashed;
     text-decoration-thickness: 1px;
     text-decoration-color: gray;
 }
 
-a:hover {
+/*a:hover {
     transition: 0.5s;
     color: black;
     text-decoration-style: solid;
     text-decoration-thickness: 1px;
     text-decoration-color: red;
 
-}
+}*/
 
-nav {
+.nav {
     display: flex;
-    width: 100%;
     height: 26px;
     justify-content: center;
     gap: 10px;
     align-items: center;
-    background-color: whitesmoke;
-    border-bottom: 1px solid darkgray;
+    background-color: #cc7b00;
+    border-bottom: 1px solid #ffa700;
 }
 
 .container {
@@ -51,10 +50,10 @@ nav {
 .heading {
     padding: 0px 25px;
     /*background-image: url("https://images.unsplash.com/photo-1636110854424-294576c904f7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");*/
-    filter: drop-shadow(slategray 2px 2px 5px);
+    filter: drop-shadow(#bf9a00 2px 2px 5px);
 
     h1 {
-        color: lightyellow;
+        color: #ffa700;
     }
 }
 
@@ -64,11 +63,12 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: whitesmoke;
+    background-color: #d0a800;
     padding: 7px 5px;
     margin: 0 1rem;
     border-radius: 0px;
-    filter: drop-shadow(slategray 2px 2px 5px);
+    color: #cc7b00;
+    filter: drop-shadow(#bf9a00 2px 2px 5px);
 }
 
 footer {
@@ -78,11 +78,11 @@ footer {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    border-top: slategray solid 1px;
-    background-color: whitesmoke;
+    border-top: #ffa700 solid 1px;
+    background-color: #cc7b00;
 
     p {
-        color: darkslategrey;
+        color: #ffa700;
         text-align: center;
     }
 }
