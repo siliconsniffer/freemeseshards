@@ -10,9 +10,20 @@ body {
 }
 
 a {
-    color: darkslategrey;
-    text-decoration: none;
-    text-align: center;
+    padding: 1px 3px;
+    color: darkslategray;
+    text-decoration-style: dashed;
+    text-decoration-thickness: 1px;
+    text-decoration-color: gray;
+}
+
+a:hover {
+    transition: 0.5s;
+    color: black;
+    text-decoration-style: solid;
+    text-decoration-thickness: 1px;
+    text-decoration-color: red;
+
 }
 
 nav {
@@ -39,7 +50,8 @@ nav {
 
 .heading {
     padding: 0px 25px;
-    background-image: url("https://images.unsplash.com/photo-1636110854424-294576c904f7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    /*background-image: url("https://images.unsplash.com/photo-1636110854424-294576c904f7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");*/
+    filter: drop-shadow(slategray 2px 2px 5px);
 
     h1 {
         color: lightyellow;
@@ -47,14 +59,16 @@ nav {
 }
 
 .stage {
-    display: inline-block;
-    /*align-items: center;*/
-    /*justify-content: center;*/
+    display: flex;
+    width: 95%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: whitesmoke;
     padding: 7px 5px;
     margin: 0 1rem;
     border-radius: 0px;
-    box-shadow: slategray 2px 2px 3px 1px;
+    filter: drop-shadow(slategray 2px 2px 5px);
 }
 
 footer {
@@ -71,13 +85,23 @@ footer {
         color: darkslategrey;
         text-align: center;
     }
+}
 
-    a {
-        text-decoration: 2px double gray;
-    }
+.test {
+    margin-top: 5px;
+    padding: 5px;
+    font-weight: bold;
+    border: black dashed 1px;
+    background-color: greenyellow;
+}
 
-    a:hover {
-        transition: 0.3s;
-        text-decoration: 1px underline red;
-    }
+.test:hover {
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border: black solid 1px;
+    transition: 1000ms;
+    filter: drop-shadow(black 3px 3px 3px);
+    color: whitesmoke;
+    background-color: brown;
 }
